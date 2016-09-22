@@ -56,6 +56,7 @@ class CategoryControllerCore extends FrontController
                 _THEME_CSS_DIR_.'product_list.css' => 'all',
             ));
         }
+        //Commentaire Halima 22/09/2016
 
         $scenes = Scene::getScenes($this->category->id, $this->context->language->id, true, false);
         if ($scenes && count($scenes)) {
